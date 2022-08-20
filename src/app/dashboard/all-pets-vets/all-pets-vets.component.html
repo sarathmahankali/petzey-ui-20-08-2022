@@ -1,0 +1,26 @@
+<hr style="margin-bottom: 0" />
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <ng-container *ngIf="role==='vet'" else second>
+          <b>All Pets</b>
+        </ng-container>
+        <ng-template #second>
+          <b>All Vets</b>
+        </ng-template>
+      </div>
+      <div class="d-flex">
+        <div class="row" style="margin-left:50px;width: 300px;">
+          <div class="input-group">
+            <div class="form-outline">
+              <input type="search" placeholder="search" id="form1" class="form-control" />
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<app-card-component></app-card-component>
